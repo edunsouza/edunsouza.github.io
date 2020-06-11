@@ -14,3 +14,4 @@
 * Status logs (names, opened videos and others)
 * Turn off all videos and microphones
 * Turn on all videos and microphones
+* Send email with participants count (using npoint.io and formsubmit.co)

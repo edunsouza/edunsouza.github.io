@@ -7,11 +7,13 @@
 * Focus on Conductor
 * Focus on Reader
 * Focus on Speaker
-* Custom focus
+* Create custom focus button
+* Delete custom focus button
 * Participants count
 * Naming validation
 * Waiting room free pass
 * Status logs (names, opened videos and others)
 * Turn off all videos and microphones
 * Turn on all videos and microphones
+* Turn on all microphones for claps time (turns off after custom timeout)
 * Send email with participants count (using npoint.io and formsubmit.co)

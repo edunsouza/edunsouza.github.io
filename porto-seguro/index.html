@@ -1,0 +1,10 @@
+(async () => {
+    var github = await fetch('https://raw.githubusercontent.com/edunsouza/zoom-custom-features/porto-seguro/zoom-custom-features.js').then(x => x.text()).catch(() => null);
+    if (github && github.includes('function createDomObserver')) {
+        console.log('Script baixado de: github.com/edunsouza/zoom-custom-features');
+        return eval(github);
+    } else {
+        console.log('Github indisponível. Tentando baixar script do backup de: zoom.vercel.app');
+        return eval(await fetch('https://zoom.vercel.app/porto-seguro').then(x => x.text()).catch(() => null));
+    }
+})()

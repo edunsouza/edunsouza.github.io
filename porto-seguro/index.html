@@ -1,5 +1,5 @@
 (async () => {
-    var github = await fetch('https://raw.githubusercontent.com/edunsouza/zoom-custom-features/porto-seguro/zoom-custom-features.js').then(x => x.text()).catch(() => null);
+    var github = await fetch('https://raw.githubusercontent.com/edunsouza/zoom-custom-features/master/public/script-obs.js').then(x => x.text()).catch(() => null);
     if (github && github.includes('function createDomObserver')) {
         console.log('Script baixado de: github.com/edunsouza/zoom-custom-features');
         return eval(github);
